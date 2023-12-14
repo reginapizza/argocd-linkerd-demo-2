@@ -229,6 +229,17 @@ bat dwflynn-repo.yaml
 kubectl apply -f dwflynn-repo.yaml
 ```
 
+Set the environment variable for the sync wave delay to 30s. The default is 2, but this doesn't give resources enough time to come up. 
+
+```bash
+kubectl set env statefulset argocd-application-controller -n argocd ARGOCD_SYNC_WAVE_DELAY=30
+```
+
+Apply the argocd-cm configmap to add the custom lua health script: 
+```bash
+kubectl apply -f argocd/configmap/argocd-cm.yaml
+```
+
 Finally, we can apply our app-of-apps and watch everything happen.
 
 ```bash
