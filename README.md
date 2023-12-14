@@ -86,4 +86,12 @@ kubectl delete secret argocd-initial-admin-secret -n argocd
 ```
 kubectl set env statefulset argocd-application-controller -n argocd ARGOCD_SYNC_WAVE_DELAY=30s
 ```
+7. Apply the argocd-cm configmap to add the custom lua health script: 
+```
+kubectl apply -f argocd/configmap/argocd-cm.yaml
+```
+8. Apply the `faces-app-of-apps.yaml` to deploy the parent application, which in turn will create all the children applications: 
+```
+kubectl apply -f faces-app-of-apps.yaml
+```
 
