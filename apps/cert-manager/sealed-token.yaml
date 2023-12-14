@@ -1,0 +1,15 @@
+---
+apiVersion: bitnami.com/v1alpha1
+kind: SealedSecret
+metadata:
+  creationTimestamp: null
+  name: vault-pki-token
+  namespace: cert-manager
+spec:
+  encryptedData:
+    token: AgB6yLFfETdGWyRtvmyrxdh52Xis5A1L6qt9wD0xUKwplpiRxZrPciDi9UxZTabi8y49e9FChTmFJhqJOWmuxU3/VCUIMYL47iTugSHdlA9+aNWDOk3NuNv5m//88YAePpH0OZS2qH71zoj4T7K0lsV6xBVDCJOnwOH4hjYlpIaAlobbAfGZ6ybU6yZeBU3xPgPhSXze/3Wyu1z64ihPLVK0DyoprRADCffcokT3u6etSFyXeD2iFuZsUspjxiQU7vcyC7AYFvpzkHGoJ6rlndUPHTeQkEIEtHsgnL6LE24dYAt0IeoKLc7EsEPW/uNecczDST0zISP3pB08/1JiLfrnD4uEoPvShDREPi1KGqQj5z8hhh57bMq3CSZphYBVJLy3YPNGONOne0a26D2MY4H8aGVtCUOM9zs/iQ7D5Y4G5UxGL5dbouJb0EJncoar7IVL5yqfOhaGKdvSqWsUmknNBB54ONfxbj7USHwqOeh8Wx2Dd7sfTDFtyUNzM80L7I9Ot2vk+jpiav+Nu1V9Ng3Gr8DWLGQ/AnsA4ADAPcGMIhmE1bDaeZ6OsSiARJyA810BrpRhn47/gW5sxVfMfKJAZV3ApG9XoE7Z2MX2z+pgSSC9MNURa3edjnsU6fcHzyszfcp+1V+OH1WbgmDYQ9sHsVfcioduanM2VvV6jWbgaZbx56OvfWFOI7Xh+Wlhtkz9oG0eJs3+ckvZCta3GD9bbkL94pZALqnpYDOKVuIPJXsI89++6pY8AJxllxkKY2b8v+KwQ/NmXnIvY5uPztowVUr65ak9WebLpfe4G0KdrKCIjHPpI6LNhdrViy04HA==
+  template:
+    metadata:
+      creationTimestamp: null
+      name: vault-pki-token
+      namespace: cert-manager
