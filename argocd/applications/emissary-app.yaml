@@ -16,7 +16,7 @@ spec:
   project: default
   source:
     path: apps/emissary
-    repoURL: 'https://github.com/kflynn/argocd-linkerd-demo-2.git'
+    repoURL: 'https://github.com/reginapizza/argocd-linkerd-demo-2.git'
     targetRevision: master
   syncPolicy:
     automated:
